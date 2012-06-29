@@ -9,7 +9,8 @@
 
         var console = {
           log: function(text) {
-              $('body').append(text + "<br />");
+              var message = $('<h1>').text(text)
+              $('body').append(message);
            }
         }
 
