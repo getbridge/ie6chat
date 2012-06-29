@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Kandan</title>
+  <link href="/assets/jquery-ui.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/assets/css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/assets/application.css" media="all" rel="stylesheet" type="text/css">
+
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+  <script src="http://getbridge.com/js/bridge.min.js"></script>
+
+  <script>
+$(function(){
+  
+  var bridge = new Bridge({apiKey:'abcdefgh'})
+
+  var chatHandler = {
+    message: function(sender, message) {
+      var username = $('<span>').addClass('user').text(sender);
+      var content = $('<span>').addClass('content').text(message);
+      var message = $('<div>').append(username).append(content).addClass('readable');
+      var avatar = $('<img>').attr('src', encodeURI('http://robohash.org/'+sender)).addClass('avatar')
+      var activity = $('<div>').addClass('activity').append(avatar).append(message);
+      $('#channel-activities-1').append(activity);
+    }
+  }
+
+  var chat_channel;
+
+  var joinCallback = function(channel, name) {
+    console.log('Joined channel : ', name); 
+    channel.message('steve', 'Bridge is nifty');
+    
+    chat_channel = channel;
+  }
+
+  bridge.getService('auth', function(auth){
+    auth.join('bridge-lovers', 'secret123', chatHandler, joinCallback);
+  });
+
+  bridge.connect();
+  
+  $('.post').click(function(){
+    chat_channel.message('steve', $('.chat-input').val());
+    $('.chat-input').val('');
+  });
+  
+});
+</script>
+
+</head>
+  <link rel="stylesheet" type="text/css" href="data:text/css,">
+<body>
+
+
+<div id="kandan" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+  <div class="header">
+    <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+
+
+<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active">
+</li></ul>  
+
+  </div>
+
+  <div id="app_body">
+    <div class="main-area">
+      <div id="mask_container">
+	<div id="head-mask">
+	  <div class="corner_cover" style="float:left;position:relative;left:-10px;"></div>
+	  <div class="corner_cover" style="float:right;position:relative;right:-10px;"></div>
+	</div>
+      </div>
+    <div id="channels"><div id="channels-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom"><div class="paginated-activities"><div class="pagination" style="display: none; ">previous messages</div>
+<div class="channel-activities" id="channel-activities-1"></div></div><div class="chatbox"><textarea class="chat-input"></textarea>
+<button class="post">Post</button>
+</div></div></div></div>
+
+    <div class="sidebar">
+      <div class="sidebar_filler">
+        <div class="widgets">
+            <div class="widget" id="widget_widget_0">
+              <div class="widget_header"></div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mask">&nbsp;</div>
+
+</div>
+  <div class="user_menu">
+  </div>
+
+
+
+  <ul class="audio_channels" style="display:none;">
+    <audio class="audio_private"></audio>
+    <audio class="audio_common"></audio>
+  <audio class="audio_1"></audio></ul>
+
+
+
+</body></html>

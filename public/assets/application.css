@@ -1,0 +1,1315 @@
+/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+/* =============================================================================
+ * HTML5 display definitions
+ * ========================================================================== */
+/* Corrects block display not defined in IE6/7/8/9 & FF3 */
+/* line 10, ../../app/assets/stylesheets/lib/normalize.sass */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
+/* line 26, ../../app/assets/stylesheets/lib/normalize.sass */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* Prevents modern browsers from displaying 'audio' without controls
+ * Remove excess height in iOS5 devices */
+/* line 37, ../../app/assets/stylesheets/lib/normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support */
+/* line 45, ../../app/assets/stylesheets/lib/normalize.sass */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+ * Base
+ * ========================================================================== */
+/* 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+/* line 58, ../../app/assets/stylesheets/lib/normalize.sass */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Addresses font-family inconsistency between 'textarea' and other form elements. */
+/* line 69, ../../app/assets/stylesheets/lib/normalize.sass */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* Addresses margins handled incorrectly in IE6/7 */
+/* line 79, ../../app/assets/stylesheets/lib/normalize.sass */
+body {
+  margin: 0;
+}
+
+/* =============================================================================
+ * Links
+ * ========================================================================== */
+/* Addresses outline displayed oddly in Chrome */
+/* line 89, ../../app/assets/stylesheets/lib/normalize.sass */
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test */
+/* line 96, ../../app/assets/stylesheets/lib/normalize.sass */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+ * Typography
+ * ========================================================================== */
+/* Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5 */
+/* line 108, ../../app/assets/stylesheets/lib/normalize.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 112, ../../app/assets/stylesheets/lib/normalize.sass */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 116, ../../app/assets/stylesheets/lib/normalize.sass */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 120, ../../app/assets/stylesheets/lib/normalize.sass */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 124, ../../app/assets/stylesheets/lib/normalize.sass */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 128, ../../app/assets/stylesheets/lib/normalize.sass */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* Addresses styling not present in IE7/8/9, S5, Chrome */
+/* line 135, ../../app/assets/stylesheets/lib/normalize.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* Addresses style set to 'bolder' in FF3+, S4/5, Chrome */
+/* line 141, ../../app/assets/stylesheets/lib/normalize.sass */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 145, ../../app/assets/stylesheets/lib/normalize.sass */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* Addresses styling not present in S5, Chrome */
+/* line 151, ../../app/assets/stylesheets/lib/normalize.sass */
+dfn {
+  font-style: italic;
+}
+
+/* Addresses styling not present in IE6/7/8/9 */
+/* line 157, ../../app/assets/stylesheets/lib/normalize.sass */
+mark {
+  background: yellow;
+  color: black;
+}
+
+/* Addresses margins set differently in IE6/7 */
+/* line 164, ../../app/assets/stylesheets/lib/normalize.sass */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/* Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+/* line 172, ../../app/assets/stylesheets/lib/normalize.sass */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* Improves readability of pre-formatted text in all browsers */
+/* line 183, ../../app/assets/stylesheets/lib/normalize.sass */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4 */
+/* 1 */
+/* line 194, ../../app/assets/stylesheets/lib/normalize.sass */
+q {
+  quotes: none;
+}
+
+/* 2 */
+/* line 199, ../../app/assets/stylesheets/lib/normalize.sass */
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* line 204, ../../app/assets/stylesheets/lib/normalize.sass */
+small {
+  font-size: 75%;
+}
+
+/* Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930 */
+/* line 211, ../../app/assets/stylesheets/lib/normalize.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 218, ../../app/assets/stylesheets/lib/normalize.sass */
+sup {
+  top: -0.5em;
+}
+
+/* line 221, ../../app/assets/stylesheets/lib/normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+ * Lists
+ * ========================================================================== */
+/* Addresses margins set differently in IE6/7 */
+/* line 231, ../../app/assets/stylesheets/lib/normalize.sass */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 237, ../../app/assets/stylesheets/lib/normalize.sass */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* Addresses paddings set differently in IE6/7 */
+/* line 243, ../../app/assets/stylesheets/lib/normalize.sass */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/* Corrects list images handled incorrectly in IE7 */
+/* line 251, ../../app/assets/stylesheets/lib/normalize.sass */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+ * Embedded content
+ * ========================================================================== */
+/* 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+/* line 265, ../../app/assets/stylesheets/lib/normalize.sass */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/* Corrects overflow displayed oddly in IE9 */
+/* line 274, ../../app/assets/stylesheets/lib/normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+ * Figures
+ * ========================================================================== */
+/* Addresses margin not present in IE6/7/8/9, S5, O11 */
+/* line 284, ../../app/assets/stylesheets/lib/normalize.sass */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+ * Forms
+ * ========================================================================== */
+/* Corrects margin displayed oddly in IE6/7 */
+/* line 294, ../../app/assets/stylesheets/lib/normalize.sass */
+form {
+  margin: 0;
+}
+
+/* Define consistent border, margin, and padding */
+/* line 300, ../../app/assets/stylesheets/lib/normalize.sass */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3
+ * 3. Corrects alignment displayed oddly in IE6/7 */
+/* line 310, ../../app/assets/stylesheets/lib/normalize.sass */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/* 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers */
+/* line 324, ../../app/assets/stylesheets/lib/normalize.sass */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/* Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet */
+/* line 340, ../../app/assets/stylesheets/lib/normalize.sass */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+}
+
+/* 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6 */
+/* line 351, ../../app/assets/stylesheets/lib/normalize.sass */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/* Re-set default cursor for disabled elements */
+/* line 365, ../../app/assets/stylesheets/lib/normalize.sass */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+ *    Known issue: excess padding remains in IE6 */
+/* line 375, ../../app/assets/stylesheets/lib/normalize.sass */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/* 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+/* line 390, ../../app/assets/stylesheets/lib/normalize.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/* Removes inner padding and search cancel button in S5, Chrome on OS X */
+/* line 401, ../../app/assets/stylesheets/lib/normalize.sass */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+/* line 409, ../../app/assets/stylesheets/lib/normalize.sass */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers */
+/* line 418, ../../app/assets/stylesheets/lib/normalize.sass */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+ * Tables
+ * ========================================================================== */
+/* Remove most spacing between table cells */
+/* line 431, ../../app/assets/stylesheets/lib/normalize.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 5, ../../app/assets/stylesheets/_base.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../../app/assets/stylesheets/_base.sass */
+#kandan {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 12, ../../app/assets/stylesheets/_base.sass */
+.header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  height: 35px;
+  top: 0;
+  background-color: #566569;
+  background-image: -webkit-linear-gradient(top, #566569, #3f494b);
+  background-image: -moz-linear-gradient(top, #566569, #3f494b);
+  background-image: -ms-linear-gradient(top, #566569, #3f494b);
+  background-image: -o-linear-gradient(top, #566569, #3f494b);
+  background-image: linear-gradient(top, #566569, #3f494b);
+  z-index: 90001;
+  padding: 0 5px;
+  -webkit-box-shadow: inset 0px -10px 10px -10px black;
+  -moz-box-shadow: inset 0px -10px 10px -10px black;
+  box-shadow: inset 0px -10px 10px -10px black;
+  border-bottom: 1px solid white;
+  margin-top: -2px;
+}
+
+/* line 26, ../../app/assets/stylesheets/_base.sass */
+.user_menu_link {
+  float: right;
+}
+/* line 28, ../../app/assets/stylesheets/_base.sass */
+.user_menu_link .user {
+  float: right;
+}
+/* line 30, ../../app/assets/stylesheets/_base.sass */
+.user_menu_link .user_flag {
+  float: right;
+}
+
+/* line 33, ../../app/assets/stylesheets/_base.sass */
+cite {
+  font-style: normal;
+}
+
+/* line 36, ../../app/assets/stylesheets/_base.sass */
+.user_flag {
+  display: block;
+  border-color: #a8aeb0 transparent transparent transparent;
+  border-style: solid;
+  border-width: 7px;
+  float: right;
+  width: 0;
+  height: 0;
+  margin-top: 15px;
+}
+
+/* line 46, ../../app/assets/stylesheets/_base.sass */
+.user_menu {
+  background-color: #566569;
+  background-image: -webkit-linear-gradient(top, #566569, #3f494b);
+  background-image: -moz-linear-gradient(top, #566569, #3f494b);
+  background-image: -ms-linear-gradient(top, #566569, #3f494b);
+  background-image: -o-linear-gradient(top, #566569, #3f494b);
+  background-image: linear-gradient(top, #566569, #3f494b);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: fixed;
+  right: 0px;
+  display: none;
+  top: 0px;
+  z-index: 9000;
+  height: 32px;
+  width: 100px;
+  padding: 5px;
+  bottom: -24px;
+  margin-top: 31px;
+}
+/* line 60, ../../app/assets/stylesheets/_base.sass */
+.user_menu a {
+  color: white;
+}
+
+/* line 64, ../../app/assets/stylesheets/_base.sass */
+.ui-state-disabled {
+  display: block;
+  cursor: pointer !important;
+}
+/* line 67, ../../app/assets/stylesheets/_base.sass */
+.ui-state-disabled * {
+  cursor: pointer !important;
+}
+
+/* gotta bump stuff in the header */
+/* line 71, ../../app/assets/stylesheets/_base.sass */
+.logo, .ui-tabs-nav {
+  padding-top: 7px !important;
+  float: left;
+}
+
+/* line 74, ../../app/assets/stylesheets/_base.sass */
+.search form {
+  padding-top: 5px;
+}
+
+/* line 78, ../../app/assets/stylesheets/_base.sass */
+#app_body {
+  height: 96%;
+  padding-top: 35px;
+}
+
+/* line 82, ../../app/assets/stylesheets/_base.sass */
+html {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 86, ../../app/assets/stylesheets/_base.sass */
+body {
+  background: #e6ebee url("/assets/page_bg.png") repeat;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  font-size: 13px;
+  font-family: "PT Sans", sans-serif;
+}
+
+/* line 94, ../../app/assets/stylesheets/_base.sass */
+.main-area {
+  width: 80%;
+  float: left;
+  padding-bottom: 70px;
+  padding-top: 22px;
+  height: 100%;
+}
+
+/* line 101, ../../app/assets/stylesheets/_base.sass */
+#channels {
+  height: 100%;
+}
+
+/* line 1, ../../app/assets/stylesheets/_chat_area.sass */
+#channels {
+  margin-top: 0px;
+}
+
+/* line 4, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-widget-header {
+  background: transparent !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border: none;
+}
+/* line 8, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-widget-header .ui-state-active {
+  background: #e6ebee;
+  border: none;
+}
+/* line 11, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-widget-header .ui-state-active a {
+  color: #82898b !important;
+}
+
+/* line 14, ../../app/assets/stylesheets/_chat_area.sass */
+.close_channel {
+  font-size: 12px;
+}
+
+/* line 17, ../../app/assets/stylesheets/_chat_area.sass */
+html body .ui-tabs .ui-tabs-nav li {
+  top: 2px !important;
+  margin-right: 0px !important;
+}
+
+/* line 20, ../../app/assets/stylesheets/_chat_area.sass */
+.create_channel {
+  cursor: hover;
+}
+
+/* line 26, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-default .tab_left, .ui-tabs .ui-tabs-nav .ui-state-default .tab_content, .ui-tabs .ui-tabs-nav .ui-state-default .tab_right {
+  display: block;
+  height: 30px;
+  background: transparent;
+}
+/* line 30, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-default .tab_left, .ui-tabs .ui-tabs-nav .ui-state-default .tab_right {
+  width: 30px;
+}
+/* line 32, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-default .tab_left {
+  background: url("/assets/tabs/tab-inactive-left.png") no-repeat;
+  float: left;
+}
+/* line 35, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-default .tab_content {
+  background: url("/assets/tabs/tab-inactive-middle.png") repeat-x;
+  float: left;
+  padding-top: 7px;
+  color: #585d5f !important;
+  position: relative;
+}
+/* line 41, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-default .tab_content .close_channel {
+  cursor: pointer;
+  padding-left: 5px;
+}
+/* line 44, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-default .tab_right {
+  background: url("/assets/tabs/tab-inactive-right.png") no-repeat;
+  float: right;
+}
+/* line 48, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-active .tab_left {
+  background-image: url("/assets/tabs/tab-active-left.png");
+}
+/* line 50, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-active .tab_content {
+  background-image: url("/assets/tabs/tab-active-middle.png");
+}
+/* line 52, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-active .tab_right {
+  background-image: url("/assets/tabs/tab-active-right.png");
+}
+/* line 54, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav #create_channel {
+  display: block;
+  width: 70px;
+  height: 30px;
+  background: url("/assets/tabs/tab-new.png") no-repeat top left;
+}
+/* line 59, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav #create_channel:hover {
+  background-position-x: -70px;
+}
+
+/* line 61, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  border: none;
+}
+/* line 66, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav {
+  z-index: 20;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  float: left;
+  padding: 0px !important;
+  margin-left: 80px;
+}
+/* line 74, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav li span {
+  font-size: 14px;
+}
+/* line 76, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-default {
+  border: none;
+  color: #7f8587;
+  background: transparent !important;
+}
+/* line 80, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-default a {
+  padding: 0px !important;
+  color: #82898b;
+}
+/* line 84, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-default a:hover span.tab_content {
+  text-decoration: underline;
+}
+/* line 86, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs .ui-tabs-nav .ui-state-active {
+  text-shadow: 0px 0px 2px white;
+}
+
+/* line 90, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-widget-content {
+  height: 100%;
+}
+
+/* line 93, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-corner-all .ui-corner-bottom, .ui-corner-bottom, .ui-corner-left, .ui-corner-right, .ui-corner-bl, .ui-corner-br {
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+}
+
+/* line 96, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-state-default {
+  font-size: 14px;
+}
+
+/* line 99, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-widget-content {
+  min-height: 100%;
+  height: 100%;
+  background: #e6ebee url("/assets/page_bg.png") repeat;
+  font-size: 13px;
+}
+
+/* line 104, ../../app/assets/stylesheets/_chat_area.sass */
+.paginated-activities, #head-mask {
+  -webkit-box-shadow: 5px 0px 5px -3px #cccccc, -5px 0px 5px -3px #cccccc, 5px 10px 5px -3px #cccccc, -5px 10px 5px -3px #cccccc;
+  -moz-box-shadow: 5px 0px 5px -3px #cccccc, -5px 0px 5px -3px #cccccc, 5px 10px 5px -3px #cccccc, -5px 10px 5px -3px #cccccc;
+  box-shadow: 5px 0px 5px -3px #cccccc, -5px 0px 5px -3px #cccccc, 5px 10px 5px -3px #cccccc, -5px 10px 5px -3px #cccccc;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -ms-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -ms-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  float: left;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  min-height: 110%;
+  padding-bottom: 70px;
+}
+/* line 113, ../../app/assets/stylesheets/_chat_area.sass */
+.paginated-activities .pagination, #head-mask .pagination {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 116, ../../app/assets/stylesheets/_chat_area.sass */
+.paginated-activities .channel-activities, #head-mask .channel-activities {
+  width: 100%;
+}
+
+/* line 119, ../../app/assets/stylesheets/_chat_area.sass */
+.ui-tabs-panel, #mask_container {
+  padding: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* line 124, ../../app/assets/stylesheets/_chat_area.sass */
+#mask_container {
+  position: fixed;
+  top: 0px;
+  background: #e6ebee url("/assets/page_bg.png") repeat;
+  z-index: 9000;
+  padding-top: 55px;
+  width: 80%;
+}
+
+/* line 132, ../../app/assets/stylesheets/_chat_area.sass */
+.corner_cover {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: white;
+}
+
+/* line 138, ../../app/assets/stylesheets/_chat_area.sass */
+html body .ui-tabs .ui-tabs-panel, html body #app_body .main-area #mask_container {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+/* line 143, ../../app/assets/stylesheets/_chat_area.sass */
+html body #app_body .main-area #head-mask {
+  min-height: 0 !important;
+  padding-bottom: 0px !important;
+  height: 20px;
+  -webkit-box-shadow: 0px 10px 5px -3px white, 0px 7px 4px -3px white, 6px 3px 3px -3px #cccccc, -5px 3px 5px -2px #cccccc;
+  -moz-box-shadow: 0px 10px 5px -3px white, 0px 7px 4px -3px white, 6px 3px 3px -3px #cccccc, -5px 3px 5px -2px #cccccc;
+  box-shadow: 0px 10px 5px -3px white, 0px 7px 4px -3px white, 6px 3px 3px -3px #cccccc, -5px 3px 5px -2px #cccccc;
+}
+
+/* html body .ui-tabs .ui-tabs-panel */
+/*   padding: 0px !important */
+/* line 152, ../../app/assets/stylesheets/_chat_area.sass */
+.chatbox {
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-box-shadow: 5px 0px 5px -3px #cccccc, -5px 0px 5px -3px #cccccc, 0px 5px 5px 0px #cccccc;
+  -moz-box-shadow: 5px 0px 5px -3px #cccccc, -5px 0px 5px -3px #cccccc, 0px 5px 5px 0px #cccccc;
+  box-shadow: 5px 0px 5px -3px #cccccc, -5px 0px 5px -3px #cccccc, 0px 5px 5px 0px #cccccc;
+  float: left;
+  border-top: 1px solid #f5f8f9;
+  padding: 10px 0px 10px 10px;
+  width: 77.2%;
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: 20px;
+  background: #e6edef;
+  z-index: 600;
+}
+/* line 164, ../../app/assets/stylesheets/_chat_area.sass */
+.chatbox textarea {
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -ms-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid #aeb9bd;
+  width: 92%;
+  padding: 0px;
+  margin: 0px;
+  height: 40px;
+  resize: none;
+}
+/* line 173, ../../app/assets/stylesheets/_chat_area.sass */
+.chatbox button {
+  background-image: -webkit-linear-gradient(top, #c8ecf6, #9fdff4);
+  background-image: -moz-linear-gradient(top, #c8ecf6, #9fdff4);
+  background-image: -ms-linear-gradient(top, #c8ecf6, #9fdff4);
+  background-image: -o-linear-gradient(top, #c8ecf6, #9fdff4);
+  background-image: linear-gradient(top, #c8ecf6, #9fdff4);
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -ms-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative;
+  left: -5px;
+  border: 1px solid #aeb9bd;
+  color: #59808b;
+  width: 7%;
+  padding: 0px;
+  margin: 0px;
+  height: 40px;
+  font-size: 16px;
+}
+
+/* line 187, ../../app/assets/stylesheets/_chat_area.sass */
+#mask {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  display: block;
+  height: 30px;
+  margin-left: -16px;
+  width: 81%;
+  background: #e6ebee url("/assets/page_bg.png") repeat;
+}
+
+/* line 1, ../../app/assets/stylesheets/_activity.sass */
+.activity {
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+  pandding-bottom: 10px;
+  border-bottom: 1px solid #dee6e8;
+  background: white;
+  position: relative;
+  min-height: 50px;
+}
+/* line 10, ../../app/assets/stylesheets/_activity.sass */
+.activity .readable {
+  float: left;
+  width: 85%;
+}
+/* line 13, ../../app/assets/stylesheets/_activity.sass */
+.activity .readable .user {
+  color: #aeb9bd;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+/* line 20, ../../app/assets/stylesheets/_activity.sass */
+.activity .readable .content {
+  float: left;
+  color: #797d7f;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+/* line 25, ../../app/assets/stylesheets/_activity.sass */
+.activity .readable .content .image-preview, .activity .readable .content .youtube-preview {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 5px 0px #cccccc;
+  -moz-box-shadow: 0px 1px 5px 0px #cccccc;
+  box-shadow: 0px 1px 5px 0px #cccccc;
+  padding: 10px;
+  background: #f3f8f9;
+  float: left;
+}
+/* line 26, ../../app/assets/stylesheets/_activity.sass */
+.activity .readable .content .image-preview a, .activity .readable .content .youtube-preview a {
+  width: 100%;
+}
+/* line 33, ../../app/assets/stylesheets/_activity.sass */
+.activity .readable .content .image-preview .name, .activity .readable .content .youtube-preview .name {
+  color: #878d8f;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* line 38, ../../app/assets/stylesheets/_activity.sass */
+.posted_at {
+  float: right;
+  text-align: right;
+  font-size: 11px;
+  position: absolute;
+  right: 0px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 4px;
+  background: #f3f8f9;
+  color: #bdc6ca;
+}
+
+/* line 50, ../../app/assets/stylesheets/_activity.sass */
+.avatar {
+  margin-right: 10px;
+  display: block;
+  float: left;
+  width: 5%;
+  width: 30px;
+  height: 30px;
+}
+
+/* line 58, ../../app/assets/stylesheets/_activity.sass */
+.current_user {
+  background-color: #f5f5f5;
+}
+/* line 60, ../../app/assets/stylesheets/_activity.sass */
+.current_user .posted_at {
+  background: #e6eaeb;
+  color: #a9b1b6;
+}
+
+/* line 64, ../../app/assets/stylesheets/_activity.sass */
+img.image-embed {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* line 1, ../../app/assets/stylesheets/_sidebar.sass */
+.sidebar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  min-height: 100%;
+  height: 100%;
+  width: 20%;
+  float: right;
+  border-left: 1px solid #cdd1d4;
+}
+
+/* line 11, ../../app/assets/stylesheets/_sidebar.sass */
+.sidebar_filler {
+  padding-top: 55px;
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid #f2f4f6;
+}
+
+/* line 17, ../../app/assets/stylesheets/_sidebar.sass */
+.widgets {
+  float: left;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 22, ../../app/assets/stylesheets/_sidebar.sass */
+.widgets .widget {
+  margin-bottom: 20px;
+  border: 1px solid #d0d5d8;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -ms-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -ms-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-bottom-left-radius: 7px;
+  -moz-border-radius-bottomleft: 7px;
+  -ms-border-bottom-left-radius: 7px;
+  -o-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  -moz-border-bottom-right-radius: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -ms-border-bottom-right-radius: 7px;
+  -o-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background: #f3f8f9;
+  float: left;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px #d1d6d9;
+  -moz-box-shadow: 0px 2px #d1d6d9;
+  box-shadow: 0px 2px #d1d6d9;
+}
+
+/* line 32, ../../app/assets/stylesheets/_sidebar.sass */
+.widget_header {
+  background-image: -webkit-linear-gradient(top, #f3f8f9, #dbdfe0);
+  background-image: -moz-linear-gradient(top, #f3f8f9, #dbdfe0);
+  background-image: -ms-linear-gradient(top, #f3f8f9, #dbdfe0);
+  background-image: -o-linear-gradient(top, #f3f8f9, #dbdfe0);
+  background-image: linear-gradient(top, #f3f8f9, #dbdfe0);
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -ms-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -ms-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid #dbdfe0;
+  float: left;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #7f8587;
+}
+/* line 46, ../../app/assets/stylesheets/_sidebar.sass */
+.widget_header h3 {
+  margin: 0 !important;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 20px auto;
+}
+
+/* line 55, ../../app/assets/stylesheets/_sidebar.sass */
+.widget_content {
+  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-bottom-left-radius: 7px;
+  -moz-border-radius-bottomleft: 7px;
+  -ms-border-bottom-left-radius: 7px;
+  -o-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  -moz-border-bottom-right-radius: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -ms-border-bottom-right-radius: 7px;
+  -o-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  float: left;
+  width: 100%;
+  clear: both;
+  background: #f3f8f9;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+/* line 64, ../../app/assets/stylesheets/_sidebar.sass */
+.widget_action_bar {
+  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-bottom-left-radius: 7px;
+  -moz-border-radius-bottomleft: 7px;
+  -ms-border-bottom-left-radius: 7px;
+  -o-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  -moz-border-bottom-right-radius: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -ms-border-bottom-right-radius: 7px;
+  -o-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 40px;
+  color: #808789;
+  float: left;
+  width: 100%;
+  clear: both;
+  height: 40px;
+  min-height: 40px;
+  border-top: 2px solid #d2d8d8;
+  background: #e9eff0;
+}
+
+/* line 78, ../../app/assets/stylesheets/_sidebar.sass */
+.search {
+  min-width: 100px;
+  float: right;
+  text-align: right;
+  padding: 0px 5px;
+  border: 1px solid #3f494b;
+  border-top: none;
+  border-bottom: none;
+  height: 100%;
+}
+/* line 87, ../../app/assets/stylesheets/_sidebar.sass */
+.search input {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  background: #5d676b url("/assets/search_icon.png") no-repeat;
+  -webkit-box-shadow: inset 0px 7px 6px -5px #3a4547, 2px 7px 7px -6px #7f8587;
+  -moz-box-shadow: inset 0px 7px 6px -5px #3a4547, 2px 7px 7px -6px #7f8587;
+  box-shadow: inset 0px 7px 6px -5px #3a4547, 2px 7px 7px -6px #7f8587;
+  background-position: 95% center;
+  background-size: 15px;
+  width: 100%;
+  color: #cccccc;
+  border: 2px solid #454d50;
+  margin-top: 2px;
+  padding-right: 15%;
+}
+
+/* line 100, ../../app/assets/stylesheets/_sidebar.sass */
+.header .user {
+  float: right;
+  color: #cccccc;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  height: 20px;
+  line-height: 20px;
+}
+/* line 108, ../../app/assets/stylesheets/_sidebar.sass */
+.header .user span {
+  position: relative;
+  left: 5px;
+  top: 2px;
+  padding-left: 5px;
+}
+/* line 113, ../../app/assets/stylesheets/_sidebar.sass */
+.header .user img {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 1, ../../app/assets/stylesheets/plugins/_attachments.sass */
+#file {
+  display: none;
+}
+
+/* line 4, ../../app/assets/stylesheets/plugins/_attachments.sass */
+.file_list {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 158px;
+  overflow: scroll;
+}
+/* line 10, ../../app/assets/stylesheets/plugins/_attachments.sass */
+.file_list .file_item {
+  clear: both;
+  float: left;
+  line-height: 30px;
+  color: #585d5f;
+}
+/* line 15, ../../app/assets/stylesheets/plugins/_attachments.sass */
+.file_list .file_item img {
+  width: 14px;
+  height: 12px;
+  margin-right: 10px;
+}
+/* line 19, ../../app/assets/stylesheets/plugins/_attachments.sass */
+.file_list .file_item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #585d5f;
+}
+/* line 24, ../../app/assets/stylesheets/plugins/_attachments.sass */
+.file_list .file_item a:hover span {
+  text-decoration: underline !important;
+}
+
+/* line 28, ../../app/assets/stylesheets/plugins/_attachments.sass */
+.widget_action_bar form {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  float: left;
+}
+/* line 33, ../../app/assets/stylesheets/plugins/_attachments.sass */
+.widget_action_bar form .dropzone {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* line 1, ../../app/assets/stylesheets/plugins/_user_list.sass */
+.user_list {
+  padding-bottom: 10px;
+  float: left;
+}
+/* line 4, ../../app/assets/stylesheets/plugins/_user_list.sass */
+.user_list .user {
+  float: left;
+  display: block;
+  margin-top: 10px;
+  clear: left;
+}
+/* line 9, ../../app/assets/stylesheets/plugins/_user_list.sass */
+.user_list .name {
+  float: left;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #585d5f;
+  font-size: 12px;
+}
