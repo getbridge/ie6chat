@@ -3,14 +3,21 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   
     <title>Ie6chat</title>
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
      <script src="http://getbridge.com/js/bridge.min.js"></script>
      <script type="text/javascript" charset="utf-8">
+
+        var console = {
+          log: function(text) {
+              $('body').append(text + "<br />");
+           }
+        }
+
         var bridge = new Bridge({apiKey:'abcdefgh'});
         var authHandler = {
           join: function(room, password, obj, callback) {
             if (password == "secret123") {
-              // new: join channel using the client's objects
+              console.log("Joined new user");
               bridge.joinChannel(room, obj, callback) 
             }
           }
